@@ -1,0 +1,142 @@
+:root {
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    color: var(--Light_Grayish_Magenta);
+}
+
+body,
+input,
+button {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    text-align: left;
+    font-size: 15px;
+    color: var(--Light_Grayish_Magenta);
+    font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    /* color: var(--Light_Grayish_Magenta); */
+}
+
+.body {
+    height: 100vh;
+    width: 100%;
+    background: url('/images/bg-pattern-top-desktop.svg') no-repeat, url('/images/bg-pattern-bottom-desktop.svg') no-repeat;
+    background-position: top left, bottom right;
+    background-size: 35% 50%, 85% 85%;
+    margin: auto;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.heading {
+    margin: 50px auto;
+    /* margin-bottom: 50px; */
+}
+
+.product-text {
+    width: 100%;
+    text-align: left;
+}
+
+.product-text .header {
+    width: 60%;
+    font-weight: 700;
+    color: var(--Very_Dark_Magenta);
+}
+
+.product-text .note {
+    width: 75%;
+}
+
+.rating-box {
+    width: 80%;
+    padding: .6rem 1.2rem;
+    background-color: var(--Light_Grayish_Magenta);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.rating-box span {
+    color: var(--Very_Dark_Magenta);
+    font-weight: 500;
+}
+
+.two {
+    margin-left: 40px;
+}
+
+.three {
+    margin-left: 80px;
+}
+
+.review {
+    background-color: var(--Very_Dark_Magenta);
+    border-radius: 12px;
+    margin-right: 30px;
+}
+
+.review .profile {
+    margin: 25px 18px;
+    display: flex;
+}
+
+.profile img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.name h6 {
+    font-weight: 500;
+    color: var(--White);
+    font-size: 12px;
+    line-height: 80%;
+}
+
+.name span {
+    font-weight: 500;
+    color: var(--Soft_Pink);
+    line-height: 80%;
+    font-size: 12px;
+}
+
+.notes {
+    margin: 0 18px;
+}
