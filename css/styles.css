@@ -63,7 +63,6 @@ h6 {
 
 .heading {
     margin: 50px auto;
-    /* margin-bottom: 50px; */
 }
 
 .product-text {
@@ -105,6 +104,52 @@ h6 {
     margin-left: 80px;
 }
 
+@media (max-width: 900px) {
+    .rating-box {
+        width: 100%;
+        flex-direction: column;
+    }
+    .one,
+    .two,
+    .three {
+        /* margin-left: 0; */
+        margin: 20px auto;
+    }
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .reviews {
+        margin: auto;
+    }
+    .review {
+        margin: auto;
+    }
+    .name h6 {
+        font-size: 16px;
+    }
+    .profile span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .review {
+        max-width: 600px;
+        margin: 12px auto;
+        padding-bottom: 3rem;
+    }
+    .notes p {
+        width: 80%;
+        font-size: 25px;
+    }
+}
+
 .review {
     background-color: var(--Very_Dark_Magenta);
     border-radius: 12px;
@@ -114,13 +159,19 @@ h6 {
 .review .profile {
     margin: 25px 18px;
     display: flex;
+    flex-direction: column;
 }
 
-.profile img {
+.review .profiler {
+    display: flex;
+}
+
+.review .profiler img {
     width: 25%;
     height: 25%;
     border-radius: 50%;
     margin-right: 12px;
+    margin-top: 12px;
 }
 
 .name h6 {
@@ -130,7 +181,7 @@ h6 {
     line-height: 80%;
 }
 
-.name span {
+.profile span {
     font-weight: 500;
     color: var(--Soft_Pink);
     line-height: 80%;
@@ -138,5 +189,11 @@ h6 {
 }
 
 .notes {
-    margin: 0 18px;
+    margin-top: 15px;
+}
+
+.notes p {
+    font-size: 25px;
+    margin: 10 0 0 16px;
+    padding: .3rem 0 1.1rem;
 }
